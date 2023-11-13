@@ -26,7 +26,7 @@ mybatis-plus 开发工具集，对 mapper 层增强了批量操作、集成 redi
 ```xml
 
 <dependency>
-    <groupId>cn.cuilan</groupId>
+    <groupId>cn.cuilan.tom</groupId>
     <artifactId>tom-all</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -35,7 +35,7 @@ mybatis-plus 开发工具集，对 mapper 层增强了批量操作、集成 redi
 ## Gradle
 
 ```groovy
-implementation 'cn.cuilan:tom-all:1.0.0'
+implementation 'cn.cuilan.tom:tom-all:1.0.0'
 ```
 
 # Components
