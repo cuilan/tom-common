@@ -12,12 +12,12 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>tom-mybatis-base</artifactId>
+    <artifactId>tom-utils</artifactId>
     <name>${project.artifactId}</name>
     <version>${project.parent.version}</version>
 
     <properties>
-        <Automatic-Module-Name>cn.cuilan.tom.mybatisbase</Automatic-Module-Name>
+        <Automatic-Module-Name>cn.cuilan.tom.utils</Automatic-Module-Name>
     </properties>
 
     <dependencies>
@@ -25,13 +25,6 @@
             <groupId>cn.cuilan.tom</groupId>
             <artifactId>tom-constants</artifactId>
             <version>${project.parent.version}</version>
-        </dependency>
-
-        <!-- mybatis-plus -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>${mybatis-plus.version}</version>
         </dependency>
     </dependencies>
 

@@ -16,7 +16,11 @@
         <module>tom-all</module>
         <module>tom-bom</module>
         <module>tom-constants</module>
+        <module>tom-crypto</module>
         <module>tom-mybatis-base</module>
+        <module>tom-network</module>
+        <module>tom-redis</module>
+        <module>tom-utils</module>
     </modules>
 
     <properties>
@@ -40,6 +44,9 @@
 
         <!-- trd version -->
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
+        <servlet.version>4.0.1</servlet.version>
+        <hutool.version>5.8.22</hutool.version>
+        <hashids.version>1.0.3</hashids.version>
 
         <!-- test -->
         <junit.version>5.9.2</junit.version>

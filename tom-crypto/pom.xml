@@ -12,26 +12,25 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>tom-mybatis-base</artifactId>
+    <artifactId>tom-crypto</artifactId>
     <name>${project.artifactId}</name>
     <version>${project.parent.version}</version>
 
     <properties>
-        <Automatic-Module-Name>cn.cuilan.tom.mybatisbase</Automatic-Module-Name>
+        <Automatic-Module-Name>cn.cuilan.tom.crypto</Automatic-Module-Name>
     </properties>
 
     <dependencies>
+        <!-- trd -->
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
-            <artifactId>tom-constants</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-crypto</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
-
-        <!-- mybatis-plus -->
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>${mybatis-plus.version}</version>
+            <groupId>org.hashids</groupId>
+            <artifactId>hashids</artifactId>
+            <version>${hashids.version}</version>
         </dependency>
     </dependencies>
 

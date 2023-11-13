@@ -1,4 +1,4 @@
-package cn.cuilan.tom.mybatis.base;
+package cn.cuilan.tom.mybatisbase.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

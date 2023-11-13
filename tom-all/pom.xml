@@ -24,7 +24,27 @@
         </dependency>
         <dependency>
             <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-crypto</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
             <artifactId>tom-mybatis-base</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-network</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-redis</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-utils</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>

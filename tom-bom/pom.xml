@@ -25,8 +25,50 @@
             </dependency>
             <dependency>
                 <groupId>cn.cuilan.tom</groupId>
+                <artifactId>tom-crypto</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cuilan.tom</groupId>
                 <artifactId>tom-mybatis-base</artifactId>
                 <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cuilan.tom</groupId>
+                <artifactId>tom-network</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cuilan.tom</groupId>
+                <artifactId>tom-redis</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.cuilan.tom</groupId>
+                <artifactId>tom-utils</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+
+            <!-- trd -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-http</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-crypto</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hashids</groupId>
+                <artifactId>hashids</artifactId>
+                <version>${hashids.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -38,7 +80,23 @@
         </dependency>
         <dependency>
             <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-crypto</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
             <artifactId>tom-mybatis-base</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-network</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.cuilan.tom</groupId>
+            <artifactId>tom-utils</artifactId>
         </dependency>
     </dependencies>
 

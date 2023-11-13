@@ -1,5 +1,6 @@
-package cn.cuilan.tom.mybatis.base;
+package cn.cuilan.tom.mybatisbase.entity;
 
+import cn.cuilan.tom.mybatisbase.enums.Action;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -18,7 +19,7 @@ public abstract class BaseEntity extends BaseIdEntity implements Serializable {
     /**
      * 记录状态
      */
-    private Integer action;
+    private Action action;
 
     /**
      * 记录修改时间
@@ -29,5 +30,19 @@ public abstract class BaseEntity extends BaseIdEntity implements Serializable {
      * 记录创建时间
      */
     private Long createTime;
+
+    /**
+     * 设置action参数
+     *
+     * @param action action
+     */
+    public void setAction(Action action) {
+        long now = System.currentTimeMillis();
+        if (Action.INIT == action) {
+            this.createTime = now;
+        }
+        this.actionTime = now;
+        this.action = action;
+    }
 
 }
