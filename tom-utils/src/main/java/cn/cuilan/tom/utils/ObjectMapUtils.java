@@ -13,10 +13,10 @@ import java.util.Map;
 public class ObjectMapUtils {
 
     /**
-     * 将对象转为 Map<String, Object> 类型，如果对象各字段都为空，则返回 null
+     * 将对象转为 Map&lt;String, Object$gt; 类型，如果对象各字段都为空，则返回 null
      *
-     * @param obj Object
-     * @return Map<String, Object>
+     * @param obj 源对象
+     * @return Map&lt;String, Object$gt; 字段名为key，字段值为value的map
      * @throws IllegalAccessException 对象可能禁止暴露破解字段，或无法访问
      */
     public static Map<String, Object> getObjectToMap(Object obj) throws IllegalAccessException {

@@ -27,6 +27,8 @@ public class GrpcBeanCopyUtils {
      *
      * @param source grpc源对象
      * @param target 目标对象
+     * @throws IllegalAccessException    禁止访问异常
+     * @throws InvocationTargetException 方法或构造器调用异常
      */
     public static void grpcBeanCopy(Object source, Object target) throws IllegalAccessException, InvocationTargetException {
         Field[] targetFields = target.getClass().getDeclaredFields();

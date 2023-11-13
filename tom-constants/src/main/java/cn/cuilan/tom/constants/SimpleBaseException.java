@@ -18,16 +18,32 @@ public class SimpleBaseException extends RuntimeException {
      */
     private final Integer code;
 
+    /**
+     * 简易状态码构造器
+     *
+     * @param simpleErrorCode 简易状态码
+     */
     public SimpleBaseException(SimpleErrorCode simpleErrorCode) {
         super(simpleErrorCode.getShowMsg());
         this.code = simpleErrorCode.getCode();
     }
 
+    /**
+     * 自定义消息构造器
+     *
+     * @param msg 自定义消息
+     */
     public SimpleBaseException(String msg) {
         super(msg);
         this.code = SimpleErrorCode.FAIL.getCode();
     }
 
+    /**
+     * 自定义状态码、自定义消息构造器
+     *
+     * @param code 自定义状态码
+     * @param msg  自定义消息
+     */
     public SimpleBaseException(Integer code, String msg) {
         super(msg);
         this.code = code;

@@ -1,4 +1,4 @@
-package cn.cuilan.tom;
+package cn.cuilan.tom.all;
 
 /**
  * @author zhangyan

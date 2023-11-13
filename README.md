@@ -57,4 +57,4 @@ implementation 'cn.cuilan.tom:tom-all:1.0.0'
 
 # License
 
-TOM is released ubder the Apache 2.0 license.See [LICENSE](https://github.com/cuilan/tom-common/blob/master/LICENSE)
+TOM is released ubder the Apache 2.0 license. See [LICENSE](https://github.com/cuilan/tom-common/blob/master/LICENSE)

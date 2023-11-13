@@ -2,7 +2,6 @@ package cn.cuilan.tom.redis;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.concurrent.ConcurrentMap;
  * @author zhangyan
  * @since 2021/12/20
  */
-@Slf4j
 public abstract class AbstractRedisService<M extends BaseMapper<T>, T> extends ServiceImpl<M, T> implements CachedService<T> {
 
     @Override

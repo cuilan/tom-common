@@ -5,6 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * 分页参数对象
+ *
+ * @author zhangyan
+ * @since 2023/11/13
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
