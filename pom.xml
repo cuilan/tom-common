@@ -6,7 +6,7 @@
 
     <packaging>pom</packaging>
 
-    <groupId>cn.cuilan.tom</groupId>
+    <groupId>io.github.cuilan</groupId>
     <artifactId>tom-common</artifactId>
     <version>1.0.0</version>
     <name>tom-common</name>

@@ -7,7 +7,7 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>cn.cuilan.tom</groupId>
+        <groupId>io.github.cuilan</groupId>
         <artifactId>tom-common</artifactId>
         <version>1.0.0</version>
     </parent>
@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
+            <groupId>io.github.cuilan</groupId>
             <artifactId>tom-constants</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

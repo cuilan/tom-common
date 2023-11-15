@@ -7,7 +7,7 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>cn.cuilan.tom</groupId>
+        <groupId>io.github.cuilan</groupId>
         <artifactId>tom-common</artifactId>
         <version>1.0.0</version>
     </parent>
@@ -18,32 +18,32 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
+            <groupId>io.github.cuilan</groupId>
             <artifactId>tom-constants</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
+            <groupId>io.github.cuilan</groupId>
             <artifactId>tom-crypto</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
+            <groupId>io.github.cuilan</groupId>
             <artifactId>tom-mybatis-base</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
+            <groupId>io.github.cuilan</groupId>
             <artifactId>tom-network</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
+            <groupId>io.github.cuilan</groupId>
             <artifactId>tom-redis</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.cuilan.tom</groupId>
+            <groupId>io.github.cuilan</groupId>
             <artifactId>tom-utils</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
