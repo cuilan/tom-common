@@ -7,8 +7,21 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Formatter;
 
+/**
+ * SHA-265工具类
+ *
+ * @author zhangyan
+ * @since 2023/11/17
+ */
 public class Sha256Utils {
 
+    /**
+     * 签名加密获得16进制签名
+     *
+     * @param password message
+     * @param salt     盐值
+     * @return 16进制签名
+     */
     public static String encrypt(String password, String salt) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -20,6 +33,11 @@ public class Sha256Utils {
         }
     }
 
+    /**
+     * 获得随机盐值
+     *
+     * @return 随机盐值
+     */
     public static String genSalt() {
         SecureRandom random = new SecureRandom();
         byte[] salt = new byte[16];
