@@ -17,7 +17,7 @@
     <version>${project.parent.version}</version>
 
     <properties>
-        <Automatic-Module-Name>cn.cuilan.tom.utils</Automatic-Module-Name>
+        <Automatic-Module-Name>io.github.cuilan.tom.utils</Automatic-Module-Name>
     </properties>
 
     <dependencies>

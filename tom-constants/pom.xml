@@ -17,7 +17,7 @@
     <version>${project.parent.version}</version>
 
     <properties>
-        <Automatic-Module-Name>cn.cuilan.tom.constants</Automatic-Module-Name>
+        <Automatic-Module-Name>io.github.cuilan.tom.constants</Automatic-Module-Name>
     </properties>
 
 </project>
