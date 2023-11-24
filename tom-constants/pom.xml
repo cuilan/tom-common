@@ -14,7 +14,6 @@
 
     <artifactId>tom-constants</artifactId>
     <name>${project.artifactId}</name>
-    <version>${project.parent.version}</version>
 
     <properties>
         <Automatic-Module-Name>io.github.cuilan.tom.constants</Automatic-Module-Name>

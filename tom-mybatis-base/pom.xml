@@ -14,7 +14,6 @@
 
     <artifactId>tom-mybatis-base</artifactId>
     <name>${project.artifactId}</name>
-    <version>${project.parent.version}</version>
 
     <properties>
         <Automatic-Module-Name>io.github.cuilan.tom.mybatisbase</Automatic-Module-Name>

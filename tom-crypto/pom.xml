@@ -14,7 +14,6 @@
 
     <artifactId>tom-crypto</artifactId>
     <name>${project.artifactId}</name>
-    <version>${project.parent.version}</version>
 
     <properties>
         <Automatic-Module-Name>io.github.cuilan.tom.crypto</Automatic-Module-Name>

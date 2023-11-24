@@ -14,7 +14,6 @@
 
     <artifactId>tom-all</artifactId>
     <name>${project.artifactId}</name>
-    <version>${project.parent.version}</version>
 
     <dependencies>
         <dependency>

@@ -1,3 +1,4 @@
 #!/bin/bash
 
-mvn clean deploy -P release
+export GPG_TTY=$(tty)
+mvn clean deploy -P sonatype
