@@ -1,8 +1,7 @@
 package io.github.cuilan.tom.network;
 
 import cn.hutool.core.util.StrUtil;
-
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * 网络工具类
