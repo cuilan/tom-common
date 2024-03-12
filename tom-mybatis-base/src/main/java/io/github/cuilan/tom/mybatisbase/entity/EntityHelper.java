@@ -20,7 +20,7 @@ public final class EntityHelper {
      * @param item   实体类
      * @param action action
      */
-    public static void setBaseInfo(BaseEntity item, Action action) {
+    public static void setBaseInfo(BaseTimeEntity item, Action action) {
         Long now = System.currentTimeMillis();
         if (Action.INIT == action) {
             item.setCreateTime(now);

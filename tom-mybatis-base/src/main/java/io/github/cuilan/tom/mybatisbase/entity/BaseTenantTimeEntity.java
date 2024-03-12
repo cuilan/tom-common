@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class BaseTenantEntity extends BaseEntity {
+public class BaseTenantTimeEntity extends BaseEntity {
 
     /**
      * 租户id
