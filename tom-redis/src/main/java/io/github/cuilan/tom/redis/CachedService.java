@@ -26,12 +26,26 @@ public interface CachedService<T> extends IService<T> {
     T getCacheById(long id);
 
     /**
+     * 根据id删除缓存
+     *
+     * @param id id
+     */
+    void removeCacheById(Long id);
+
+    /**
      * 根据自定义key查询，缓存中不存在，则需要子类覆盖daoGet方法，实现查询逻辑
      *
      * @param key 自定义key
      * @return T 实体对象
      */
     T getCacheByKey(String key);
+
+    /**
+     * 根据自定义key删除缓存
+     *
+     * @param key key
+     */
+    void removeCacheByKey(String key);
 
     /**
      * 查询id集合，缓存中不存在，则查库
@@ -93,7 +107,18 @@ public interface CachedService<T> extends IService<T> {
      * @param key 自定义key
      * @return 返回实体对象
      */
-    default T daoGet(String key) {
+    default T daoGetByKey(String key) {
+        // 需要子类自定义实现
+        throw new BaseException(ErrorCode.CACHE_SERVICE_UNAVAILABLE);
+    }
+
+    /**
+     * 缓存中不存在时，默认执行此方法
+     *
+     * @param collection id集合
+     * @return 返回实体对象集合
+     */
+    default List<T> daoGetByIdList(Collection<Long> collection) {
         // 需要子类自定义实现
         throw new BaseException(ErrorCode.CACHE_SERVICE_UNAVAILABLE);
     }
