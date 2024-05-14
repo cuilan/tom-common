@@ -56,12 +56,28 @@ public interface CachedService<T> extends IService<T> {
     List<T> getCacheListByIds(Collection<Long> ids);
 
     /**
+     * 查询自定义key集合，缓存中不存在，则查库
+     *
+     * @param keys keys
+     * @return 返回对象List
+     */
+    List<T> getCacheListByKeys(Collection<String> keys);
+
+    /**
      * 查询id集合，缓存中不存在，则插库
      *
      * @param ids ids
      * @return 返回对象Map，key：主键，value：实体对象
      */
     Map<Long, T> getCacheMapByIds(Collection<Long> ids);
+
+    /**
+     * 查询自定义key集合，缓存中不存在，则插库
+     *
+     * @param keys keys
+     * @return 返回对象Map，key：主键，value：实体对象
+     */
+    Map<String, T> getCacheMapByKeys(Collection<String> keys);
 
     /**
      * 清除缓存
@@ -85,11 +101,32 @@ public interface CachedService<T> extends IService<T> {
     void saveOrUpdateCache(String key, T t);
 
     /**
-     * 获取缓存中全部对象
+     * 查询所有Long类型id的缓存
      *
-     * @return ConcurrentMap
+     * @return 实体对象集合
      */
-    ConcurrentMap<String, T> getAllCache();
+    List<T> getAllCacheById();
+
+    /**
+     * 查询所有String类型自定义key的缓存
+     *
+     * @return 实体对象集合
+     */
+    List<T> getAllCacheByKey();
+
+    /**
+     * 获取所有Long类型自定义key的缓存
+     *
+     * @return ConcurrentMap&lt;Long, T&gt;
+     */
+    ConcurrentMap<Long, T> getAllCacheMapById();
+
+    /**
+     * 获取所有String类型自定义key的缓存
+     *
+     * @return ConcurrentMap&lt;String, T&gt;
+     */
+    ConcurrentMap<String, T> getAllCacheMapByKey();
 
     /**
      * 缓存中不存在时，默认执行此方法
@@ -122,4 +159,5 @@ public interface CachedService<T> extends IService<T> {
         // 需要子类自定义实现
         throw new BaseException(ErrorCode.CACHE_SERVICE_UNAVAILABLE);
     }
+
 }
